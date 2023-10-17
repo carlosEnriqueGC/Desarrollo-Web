@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #f7f7f7;*/
+  background-color: #EBE4D1;
+  margin: 0;
+  padding: 200px;
+  min-height: 50vh;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #fff; /* Fondo blanco */
+  border-bottom: 0px solid #ccc; /* Línea separadora */
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333; /* Color de texto */
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #007BFF; /* Color de texto al pasar el ratón */
+}
