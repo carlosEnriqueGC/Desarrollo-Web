@@ -1,0 +1,60 @@
+.inicio {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.imagen {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.contenido {
+  flex: 2;
+  text-align: left;
+}
+
+.quote-description {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.quotation-mark {
+  font-size: 32px;
+  color: #888;
+  margin-right: 10px;
+}
+
+.inicio h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.inicio p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.category {
+  margin-right: 15px;
+  font-size: 16px;
+  color: #007BFF;
+}
