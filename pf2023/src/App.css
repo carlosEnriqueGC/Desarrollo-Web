@@ -8,7 +8,7 @@ body {
 }
 
 .App {
-  max-width: 800px;
+  max-width: 950px;
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
@@ -37,4 +37,12 @@ body {
 
 .navbar a:hover {
   color: #007BFF; /* Color de texto al pasar el ratón */
+}
+
+.navbar .active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  border-radius: 1px;
+  border-bottom: 3px solid #007BFF; /* Color de la barra activa */
 }

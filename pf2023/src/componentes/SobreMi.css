@@ -1,15 +1,48 @@
 .sobre-mi {
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .sobre-mi h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .sobre-mi p {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.cuadro-azul {
+  background: linear-gradient(to bottom, #022843, #024583, #0376c9);
+  padding: 20px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 95%;
+  text-align: center;
+  color: white;
+}
+
+.imagen-circular {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.contenido-izquierda {
+  padding: 20px;
+  width: 70%;
+  text-align: justify;
+}
+
+.subtitulo {
+  font-weight: bold;
+  color: #363636;
+padding-left: 35px;
+}
+
+.descripcion {
+  margin-bottom: 10px;
+  padding-left: 35px;
+}
+
+.icono-titulo {
+  width: 25px; /* Ajusta el tamaño de la imagen según tus preferencias */
+  margin-right: 10px; /* Espacio entre la imagen y el texto del título */
+  vertical-align: middle; /* Alinea la imagen verticalmente en el medio del texto del título */
+}
