@@ -16,6 +16,7 @@ function Inicio() {
             <div className="category">Juegos</div>
             <div className="category">Autos</div>
             <div className="category">Futbol</div>
+            <div className="category">Informatica</div>
           </div>
           <div className="quote-description">
             <span className="quotation-mark">"</span>
