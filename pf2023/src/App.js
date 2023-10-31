@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; // Importa 'useState' desde React
+import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
@@ -7,12 +7,19 @@ import SobreMi from './componentes/SobreMi';
 import Proyectos from './componentes/Proyectos';
 import Contacto from './componentes/Contactos';
 
+import menuIcon from './componentes/iconos/menu.png'; // Ruta a la imagen del icono
+
 function App() {
-  const [paginaActual, setPaginaActual] = useState('Inicio'); // Estado para rastrear la página actual
+  const [paginaActual, setPaginaActual] = useState('Inicio');
+  const [menuAbierto, setMenuAbierto] = useState(false);
+
   return (
     <Router>
       <div className="App">
-        <ul className="navbar">
+        <button className="menu-button" onClick={() => setMenuAbierto(!menuAbierto)}>
+          <img src={menuIcon} alt="Menú" /> {/* Usa la imagen como icono */}
+        </button>
+        <ul className={`navbar ${menuAbierto ? 'menu-abierto' : ''}`}>
           <li>
             <Link to="/Inicio" onClick={() => setPaginaActual('Inicio')} className={paginaActual === 'Inicio' ? 'active' : ''}>
               Inicio

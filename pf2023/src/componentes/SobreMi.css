@@ -1,3 +1,4 @@
+/* Estilos base para el componente SobreMi */
 .sobre-mi {
   display: flex;
   justify-content: space-between;
@@ -33,7 +34,7 @@
 .subtitulo {
   font-weight: bold;
   color: #363636;
-padding-left: 35px;
+  padding-left: 35px;
 }
 
 .descripcion {
@@ -42,7 +43,28 @@ padding-left: 35px;
 }
 
 .icono-titulo {
-  width: 25px; /* Ajusta el tamaño de la imagen según tus preferencias */
-  margin-right: 10px; /* Espacio entre la imagen y el texto del título */
-  vertical-align: middle; /* Alinea la imagen verticalmente en el medio del texto del título */
+  width: 25px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Media Query para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 768px) {
+  .sobre-mi {
+    flex-direction: column; /* Cambia la dirección de los elementos en pantallas más pequeñas */
+  }
+
+  .cuadro-azul {
+    width: 100%; /* Aprovecha el ancho completo de la pantalla */
+    text-align: center;
+  }
+
+  .imagen-circular {
+    width: 100px; /* Reduce el tamaño de la imagen circular */
+    height: 100px;
+  }
+
+  .contenido-izquierda {
+    width: 100%; /* Aprovecha el ancho completo de la pantalla */
+  }
 }
