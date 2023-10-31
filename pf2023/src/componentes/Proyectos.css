@@ -1,3 +1,4 @@
+/* Estilos base para el componente Proyectos */
 .Proyectos {
   display: inline-block;
   justify-content: space-between;
@@ -82,4 +83,31 @@
   border: 1px solid white;
   padding: 10px;
   border-radius: 5px;
+}
+
+/* Media Query para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 768px) {
+  .banner1, .banner2 {
+    width: 100%; /* Aprovecha el ancho completo de la pantalla */
+    flex-direction: column; /* Cambia la dirección de los elementos en pantallas más pequeñas */
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner1 {
+    margin-bottom: 20px;
+  }
+
+  .banner2 {
+    width: 100%; /* Aprovecha el ancho completo de la pantalla */
+    text-align: center;
+  }
+
+  .proyectos-container {
+    grid-template-columns: 1fr; /* Una columna en pantallas más pequeñas */
+  }
+
+  .proyecto {
+    width: 100%; /* Aprovecha el ancho completo de la pantalla para cada proyecto */
+  }
 }

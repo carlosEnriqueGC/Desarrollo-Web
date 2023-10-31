@@ -1,3 +1,4 @@
+/* Estilos base para el componente Contactos */
 .Contacto {
   display: inline-block;
   justify-content: space-between;
@@ -25,4 +26,18 @@
   width: 25px;
   margin-right: 5px;
   vertical-align: middle;
+}
+
+/* Media Query para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 768px) {
+  .informacion_contacto {
+    flex-direction: column; /* Cambia la dirección de los elementos en pantallas más pequeñas */
+  }
+
+  .informacion1, .informacion2 {
+    width: 100%; /* Aprovecha el ancho completo de la pantalla en dispositivos móviles */
+    padding: 10px; /* Reduce el espaciado */
+    text-align: center; /* Centra el contenido */
+    padding-left: 0; /* Elimina el relleno izquierdo */
+  }
 }

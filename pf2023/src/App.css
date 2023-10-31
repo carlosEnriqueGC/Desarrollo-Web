@@ -1,6 +1,5 @@
 body {
   font-family: Arial, sans-serif;
-  /* background-color: #f7f7f7;*/
   background-color: #EBE4D1;
   margin: 0;
   padding: 200px;
@@ -21,8 +20,8 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  background-color: #fff; /* Fondo blanco */
-  border-bottom: 0px solid #ccc; /* Línea separadora */
+  background-color: #fff;
+  border-bottom: 0px solid #ccc;
 }
 
 .navbar li {
@@ -31,12 +30,12 @@ body {
 
 .navbar a {
   text-decoration: none;
-  color: #333; /* Color de texto */
+  color: #333;
   font-weight: bold;
 }
 
 .navbar a:hover {
-  color: #007BFF; /* Color de texto al pasar el ratón */
+  color: #007BFF;
 }
 
 .navbar .active::after {
@@ -44,5 +43,37 @@ body {
   display: block;
   width: 100%;
   border-radius: 1px;
-  border-bottom: 3px solid #007BFF; /* Color de la barra activa */
+  border-bottom: 3px solid #007BFF;
+}
+
+/* Estilo para el botón del menú */
+.menu-button {
+  display: none;
+}
+
+/* Estilo para el menú desplegable en pantallas estrechas */
+.navbar.menu-abierto {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+/* Media Query para mostrar el botón del menú en pantallas estrechas */
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+    background: transparent; /* Hace el botón transparente */
+    border: none;
+    cursor: pointer;
+    background-image: none; /* Elimina cualquier fondo predefinido */
+  }
+
+  .menu-button img {
+    vertical-align: middle;
+    width: 30px; /* Establece el ancho de la imagen */
+  }
+
+  .navbar {
+    display: none;
+  }
 }
