@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #EBE4D1;
+  margin: 0;
+  padding: 100px;
+  min-height: 50vh;
+}
+
+.App {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-bottom: 0px solid #ccc;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #007BFF;
+}
+
+.navbar .active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  border-radius: 1px;
+  border-bottom: 3px solid #007BFF;
+}
+
+/* Estilo para el botón del menú */
+.menu-button {
+  display: none;
+}
+
+/* Estilo para el menú desplegable en pantallas estrechas */
+.navbar.menu-abierto {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+/* Media Query para mostrar el botón del menú en pantallas estrechas */
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+    background: transparent; /* Hace el botón transparente */
+    border: none;
+    cursor: pointer;
+    background-image: none; /* Elimina cualquier fondo predefinido */
+  }
+
+  .menu-button img {
+    vertical-align: middle;
+    width: 30px; /* Establece el ancho de la imagen */
+  }
+
+  .navbar {
+    display: none;
+  }
+}

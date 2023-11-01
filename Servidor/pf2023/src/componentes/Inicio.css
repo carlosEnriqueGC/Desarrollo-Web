@@ -1,0 +1,77 @@
+/* Estilos base para el componente Inicio */
+.inicio {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.imagen {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.contenido {
+  flex: 2;
+  text-align: left;
+}
+
+.quote-description {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.quotation-mark {
+  font-size: 32px;
+  color: #888;
+  margin-right: 10px;
+}
+
+.inicio h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.inicio p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.category {
+  margin-right: 15px;
+  font-size: 16px;
+  color: #007BFF;
+}
+
+/* Media Query para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Cambia la dirección de los elementos en pantallas más pequeñas */
+  }
+
+  .imagen {
+    margin-bottom: 20px; /* Añade espacio entre la imagen y el contenido */
+  }
+
+  .profile-image {
+    width: 150px; /* Reduce el tamaño de la imagen */
+    height: 150px;
+  }
+}
