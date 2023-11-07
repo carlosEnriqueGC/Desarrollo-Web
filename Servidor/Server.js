@@ -9,7 +9,7 @@ app.listen(port, () => {
 });
 
 const db = mysql.createConnection({
-  host: 'localhost', // Cambia esto a la dirección de tu servidor MySQL
+  host: 'localhost', //  dirección del servidor MySQL
   user: 'root',
   password: '',
   database: 'bd_server'

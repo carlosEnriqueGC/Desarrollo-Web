@@ -74,7 +74,6 @@ function Proyectos() {
               
             </div>
           </div>
-          {/* Puedes agregar más proyectos aquí siguiendo el mismo patrón */}
         </div>
       </div>
     </div>
